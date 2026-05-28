@@ -1,0 +1,38 @@
+{
+	"name": "AzureSqlTable2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase2",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"tablename": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "source",
+				"type": "varchar"
+			},
+			{
+				"name": "filenane",
+				"type": "varchar"
+			},
+			{
+				"name": "sink",
+				"type": "varchar"
+			},
+			{
+				"name": "tableschema",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "sushantconfig"
+		}
+	}
+}
