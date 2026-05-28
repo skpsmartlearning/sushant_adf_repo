@@ -65,7 +65,7 @@
 										"type": "AzureBlobStorageReadSettings",
 										"recursive": true,
 										"wildcardFileName": {
-											"value": "@item().source",
+											"value": "@item().sourcefile",
 											"type": "Expression"
 										},
 										"enablePartitionDiscovery": false
@@ -101,7 +101,7 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"tablename": {
-											"value": "@item().sink",
+											"value": "@item().sinkfile",
 											"type": "Expression"
 										}
 									}
