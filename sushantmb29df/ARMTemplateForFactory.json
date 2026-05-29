@@ -117,10 +117,6 @@
 											"storeSettings": {
 												"type": "AzureBlobStorageReadSettings",
 												"recursive": true,
-												"wildcardFileName": {
-													"value": "@item().sourcefile",
-													"type": "Expression"
-												},
 												"enablePartitionDiscovery": false
 											},
 											"formatSettings": {
@@ -146,7 +142,12 @@
 										{
 											"referenceName": "ds_multicsv",
 											"type": "DatasetReference",
-											"parameters": {}
+											"parameters": {
+												"filename": {
+													"value": "@item().sourcefile",
+													"type": "Expression"
+												}
+											}
 										}
 									],
 									"outputs": [
@@ -290,11 +291,20 @@
 					"referenceName": "ls_multicsv_to_db",
 					"type": "LinkedServiceReference"
 				},
+				"parameters": {
+					"filename": {
+						"type": "string"
+					}
+				},
 				"annotations": [],
 				"type": "DelimitedText",
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobStorageLocation",
+						"fileName": {
+							"value": "@dataset().filename",
+							"type": "Expression"
+						},
 						"container": "source"
 					},
 					"columnDelimiter": ",",
