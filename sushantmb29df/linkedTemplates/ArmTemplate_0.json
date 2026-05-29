@@ -554,8 +554,10 @@
 										},
 										"sink": {
 											"type": "AzureSqlSink",
+											"preCopyScript": "@concat('TRUNCATE TABLE ','dbo.', item().sinkfile)",
 											"writeBehavior": "insert",
-											"sqlWriterUseTableLock": false
+											"sqlWriterUseTableLock": false,
+											"disableMetricsCollection": false
 										},
 										"enableStaging": false,
 										"translator": {
