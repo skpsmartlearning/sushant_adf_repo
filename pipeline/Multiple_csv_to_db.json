@@ -105,6 +105,10 @@
 										"tablename": {
 											"value": "@item().sinkfile",
 											"type": "Expression"
+										},
+										"schemaname": {
+											"value": "@item().tableschema",
+											"type": "Expression"
 										}
 									}
 								}

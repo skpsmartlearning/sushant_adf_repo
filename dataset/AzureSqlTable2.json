@@ -8,6 +8,9 @@
 		"parameters": {
 			"tablename": {
 				"type": "string"
+			},
+			"schemaname": {
+				"type": "string"
 			}
 		},
 		"annotations": [],
@@ -31,7 +34,10 @@
 			}
 		],
 		"typeProperties": {
-			"schema": "dbo",
+			"schema": {
+				"value": "@dataset().schemaname",
+				"type": "Expression"
+			},
 			"table": {
 				"value": "@dataset().tablename",
 				"type": "Expression"
