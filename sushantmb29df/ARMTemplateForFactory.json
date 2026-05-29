@@ -158,6 +158,10 @@
 												"tablename": {
 													"value": "@item().sinkfile",
 													"type": "Expression"
+												},
+												"schemaname": {
+													"value": "@item().tableschema",
+													"type": "Expression"
 												}
 											}
 										}
@@ -251,6 +255,9 @@
 				"parameters": {
 					"tablename": {
 						"type": "string"
+					},
+					"schemaname": {
+						"type": "string"
 					}
 				},
 				"annotations": [],
@@ -274,7 +281,10 @@
 					}
 				],
 				"typeProperties": {
-					"schema": "dbo",
+					"schema": {
+						"value": "@dataset().schemaname",
+						"type": "Expression"
+					},
 					"table": {
 						"value": "@dataset().tablename",
 						"type": "Expression"
