@@ -64,10 +64,6 @@
 									"storeSettings": {
 										"type": "AzureBlobStorageReadSettings",
 										"recursive": true,
-										"wildcardFileName": {
-											"value": "@item().sourcefile",
-											"type": "Expression"
-										},
 										"enablePartitionDiscovery": false
 									},
 									"formatSettings": {
@@ -92,7 +88,13 @@
 							"inputs": [
 								{
 									"referenceName": "ds_multicsv",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"filename": {
+											"value": "@item().sourcefile",
+											"type": "Expression"
+										}
+									}
 								}
 							],
 							"outputs": [
