@@ -275,7 +275,10 @@
 				],
 				"typeProperties": {
 					"schema": "dbo",
-					"table": "sushantconfig"
+					"table": {
+						"value": "@dataset().tablename",
+						"type": "Expression"
+					}
 				}
 			},
 			"dependsOn": [
