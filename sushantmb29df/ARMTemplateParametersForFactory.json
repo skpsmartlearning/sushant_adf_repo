@@ -1,0 +1,36 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "sushantmb29df"
+		},
+		"AzureSqlDatabase1_password": {
+			"value": ""
+		},
+		"AzureSqlDatabase2_password": {
+			"value": ""
+		},
+		"ls_multicsv_to_db_connectionString": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_properties_typeProperties_server": {
+			"value": "bunnyserver1.database.windows.net"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_database": {
+			"value": "bunnydatabase"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_userName": {
+			"value": "bunnyadmin"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_server": {
+			"value": "bunnyserver1.database.windows.net"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_database": {
+			"value": "bunnydatabase"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_userName": {
+			"value": "bunnyadmin"
+		}
+	}
+}
