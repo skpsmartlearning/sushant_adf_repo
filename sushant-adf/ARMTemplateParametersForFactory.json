@@ -32,6 +32,12 @@
 		"ls_multicsv_to_db_connectionString": {
 			"value": ""
 		},
+		"ls_sushant_MongoDb1_connectionString": {
+			"value": ""
+		},
+		"ls_sushant_AzureDataLakeStorage2_accountKey": {
+			"value": ""
+		},
 		"AzureDataLakeStorage1_properties_typeProperties_url": {
 			"value": "https://sushantb29adls.dfs.core.windows.net/"
 		},
@@ -70,6 +76,12 @@
 		},
 		"AzureSqlDatabase4_properties_typeProperties_userName": {
 			"value": "bunnyadmin"
+		},
+		"ls_sushant_MongoDb1_properties_typeProperties_database": {
+			"value": "local"
+		},
+		"ls_sushant_AzureDataLakeStorage2_properties_typeProperties_url": {
+			"value": "https://sushantb29adls.dfs.core.windows.net/"
 		}
 	}
 }
