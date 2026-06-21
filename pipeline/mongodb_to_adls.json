@@ -1,5 +1,5 @@
 {
-	"name": "pipeline1",
+	"name": "mongodb_to_adls",
 	"properties": {
 		"activities": [
 			{
