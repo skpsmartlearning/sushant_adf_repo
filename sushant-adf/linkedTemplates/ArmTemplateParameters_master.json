@@ -38,6 +38,9 @@
 		"ls_sushant_MongoDb1_connectionString": {
 			"value": ""
 		},
+		"AzureDataLakeStorage2_accountKey": {
+			"value": ""
+		},
 		"AzureDataLakeStorage1_properties_typeProperties_url": {
 			"value": "https://sushantb29adls.dfs.core.windows.net/"
 		},
@@ -82,6 +85,9 @@
 		},
 		"ls_sushant_MongoDb1_properties_typeProperties_database": {
 			"value": "local"
+		},
+		"AzureDataLakeStorage2_properties_typeProperties_url": {
+			"value": "https://sushantb29adls.dfs.core.windows.net/"
 		},
 		"containerUri": {
 			"value": ""
