@@ -1,0 +1,99 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "sushantb29july-adf"
+		},
+		"AzureBlobStorage1_connectionString": {
+			"value": ""
+		},
+		"AzureBlobStorage2_connectionString": {
+			"value": ""
+		},
+		"AzureBlobStorage3_connectionString": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage2_accountKey": {
+			"value": ""
+		},
+		"AzureDatabricks1_accessToken": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_password": {
+			"value": ""
+		},
+		"AzureSqlDatabase2_password": {
+			"value": ""
+		},
+		"AzureSqlDatabase3_password": {
+			"value": ""
+		},
+		"AzureSqlDatabase4_password": {
+			"value": ""
+		},
+		"ls_multicsv_to_db_connectionString": {
+			"value": ""
+		},
+		"ls_sushant_AzureDataLakeStorage2_accountKey": {
+			"value": ""
+		},
+		"ls_sushant_MongoDb1_connectionString": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://sushantb29adls.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage2_properties_typeProperties_url": {
+			"value": "https://sushantb29adls.dfs.core.windows.net/"
+		},
+		"AzureDatabricks1_properties_typeProperties_existingClusterId": {
+			"value": "0716-064302-nkmf0dr6"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_server": {
+			"value": "bunnyserver1.database.windows.net"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_database": {
+			"value": "bunnydatabase"
+		},
+		"AzureSqlDatabase1_properties_typeProperties_userName": {
+			"value": "bunnyadmin"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_server": {
+			"value": "bunnyserver1.database.windows.net"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_database": {
+			"value": "bunnydatabase"
+		},
+		"AzureSqlDatabase2_properties_typeProperties_userName": {
+			"value": "bunnyadmin"
+		},
+		"AzureSqlDatabase3_properties_typeProperties_server": {
+			"value": "bunnyserver4.database.windows.net"
+		},
+		"AzureSqlDatabase3_properties_typeProperties_database": {
+			"value": "bunnydatabase"
+		},
+		"AzureSqlDatabase3_properties_typeProperties_userName": {
+			"value": "bunnyadmin"
+		},
+		"AzureSqlDatabase4_properties_typeProperties_server": {
+			"value": "bunnyserver4.database.windows.net"
+		},
+		"AzureSqlDatabase4_properties_typeProperties_database": {
+			"value": "bunnydatabase"
+		},
+		"AzureSqlDatabase4_properties_typeProperties_userName": {
+			"value": "bunnyadmin"
+		},
+		"ls_sushant_AzureDataLakeStorage2_properties_typeProperties_url": {
+			"value": "https://sushantb29adls.dfs.core.windows.net/"
+		},
+		"ls_sushant_MongoDb1_properties_typeProperties_database": {
+			"value": "local"
+		}
+	}
+}
