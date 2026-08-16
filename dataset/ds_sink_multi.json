@@ -2,7 +2,7 @@
 	"name": "ds_sink_multi",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "AzureDataLakeStorage2",
+			"referenceName": "AzureDataLakeStorage4",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
@@ -14,7 +14,7 @@
 					"value": "@concat(\nsubstring(item().name,0,lastIndexOf(item().name,'.')),\n'_',\nformatDateTime(utcNow(),'yyyyMMdd_HHmmss'),\n'.',\nlast(split(item().name,'.'))\n)",
 					"type": "Expression"
 				},
-				"fileSystem": "sink"
+				"fileSystem": "sushantsinkblob"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
